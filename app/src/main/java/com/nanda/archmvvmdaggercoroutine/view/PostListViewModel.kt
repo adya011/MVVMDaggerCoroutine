@@ -3,7 +3,7 @@ package com.nanda.archmvvmdaggercoroutine.view
 import android.util.Log
 import android.view.View
 import androidx.lifecycle.MutableLiveData
-import com.nanda.archmvvmdaggercoroutine.di.component.ViewModelInjector
+//import com.nanda.archmvvmdaggercoroutine.di.component.ViewModelInjector
 import com.nanda.archmvvmdaggercoroutine.model.Post
 import com.nanda.archmvvmdaggercoroutine.model.PostDao
 import com.nanda.archmvvmdaggercoroutine.service.api.PostApi

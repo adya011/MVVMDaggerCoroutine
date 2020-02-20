@@ -1,13 +1,12 @@
 package com.nanda.archmvvmdaggercoroutine.view
 
 import androidx.lifecycle.ViewModel
-import com.nanda.archmvvmdaggercoroutine.di.component.DaggerViewModelInjector
-import com.nanda.archmvvmdaggercoroutine.di.component.ViewModelInjector
+import com.nanda.archmvvmdaggercoroutine.di.component.ApplicationComponent
 import com.nanda.archmvvmdaggercoroutine.di.module.NetworkModule
 
 
 abstract class BaseViewModel : ViewModel() {
-    private val injector: ViewModelInjector = DaggerViewModelInjector
+    /*private val injector: ApplicationComponent = DaggerViewModelInjector
         .builder()
         .networkModule(NetworkModule)
         .build()
@@ -21,5 +20,5 @@ abstract class BaseViewModel : ViewModel() {
             is PostListViewModel -> injector.inject(this)
             is PostViewModel -> injector.inject(this)
         }
-    }
+    }*/
 }

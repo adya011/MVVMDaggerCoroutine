@@ -8,14 +8,13 @@ import javax.inject.Singleton
 
 @Singleton
 @Component(modules = [(NetworkModule::class)])
-interface ViewModelInjector {
+interface ApplicationComponent {
     fun inject(postListViewModel: PostListViewModel)
     fun inject(postViewModel: PostViewModel)
 
     @Component.Builder
     interface Builder {
-        fun build(): ViewModelInjector
-
+        fun build(): ApplicationComponent
         fun networkModule(networkModule: NetworkModule): Builder
     }
 }
